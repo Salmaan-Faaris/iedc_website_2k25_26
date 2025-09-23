@@ -1,4 +1,4 @@
-import { useScrollFadeIn } from '@/hooks/useScrollFadeIn';
+import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
 const HeroSection = () => {
   const [ref, isVisible] = useScrollFadeIn<HTMLElement>();
@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section
       ref={ref}
       className={`flex flex-col custom-lg:flex-row justify-start items-stretch w-full h-screen px-4 py-6 fade-in-section ${
-        isVisible ? 'is-visible' : ''
+        isVisible ? "is-visible" : ""
       }`}
     >
       {/* Left: Hero Text */}
@@ -31,7 +31,7 @@ const HeroSection = () => {
         >
           <div className="relative w-full h-80 sm:h-96 lg:h-[28rem] xl:h-[32rem]">
             <img
-              src="/images/founderNextdoor.jpeg"
+              src="/images/FounderNextDoor.jpg"
               alt="Founder Nextdoor Event"
               className="w-full h-full object-cover"
               loading="lazy"
